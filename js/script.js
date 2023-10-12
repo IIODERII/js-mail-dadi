@@ -40,3 +40,45 @@ mailBtn.addEventListener("click" , function(){
     }
     document.querySelector('.messages').append(mailMessage);
 })
+
+
+// dice side
+const player = document.createElement('div');
+const computer = document.createElement('div');
+
+const diceMessage = document.createElement('div') ;
+
+const diceBtn = document.querySelector("#dice-side button");
+
+diceBtn.addEventListener('click' , function(){
+    diceMessage.className = 'p-4 fw-bold mt-5';
+
+    player.className = ('player-dice') ;
+    computer.className = ('computer-dice') ;
+
+    const playerNumber = getRndInteger(1 , 6);
+    const computerNumber = getRndInteger(1 , 6);
+
+    player.innerText = playerNumber;
+    computer.innerText = computerNumber;
+
+    document.getElementById('giocatore').append(player);
+    document.getElementById('cpu').append(computer);
+
+    if(playerNumber > computerNumber){
+        diceMessage.innerText = 'Complimenti hai vinto!!';
+        diceMessage.classList.add('bg-my-blue');
+    }else if(playerNumber < computerNumber){
+        diceMessage.innerText = 'Peccato Ha vinto il computer :(';
+        diceMessage.classList.add('bg-my-orange');
+    }else{
+        diceMessage.innerText = 'Un pareggio!!';
+        diceMessage.classList.add('bg-light');
+    }
+
+    document.getElementById('dice-side').append(diceMessage)
+})
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
