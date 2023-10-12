@@ -6,3 +6,18 @@
     --my-green-color: #3B753F; 
 }
 
+.bg-my-lime{
+    background-color: var(--my-lime-color);
+}
+.bg-my-orange{
+    background-color: var(--my-orange-orange);
+}
+.bg-my-blue{
+    background-color: var(--my-blue-color);
+}
+.bg-my-purple{
+    background-color: var(--my-purple-color);
+}
+.bg-my-green{
+    background-color: var(--my-green-color);
+}

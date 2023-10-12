@@ -10,7 +10,32 @@
 
 <body>
     
+    <div class="d-flex vh-100">
 
+        <!-- mail side -->
+        <div class="w-50 bg-my-purple h-100 overflow-auto">
+            <h2 class="fs-1 py-5 px-3">Inserisci la tua mail e verifichiamo se sei presente nel sistema</h2>
+        
+            <div class="px-3">
+                <label for="mail" class="form-label fw-bold">Inserisci la tua mail</label>
+                <input type="email" name="mail" id="mail" value="" class="form-control w-50">
+
+                <button class="btn btn-light btn-outline-dark mt-4">Invia</button>
+            </div>
+
+            <div class="messages px-3 py-5">
+                <div id="found" class="bg-success p-3 d-none">
+                    &check; La tua mail è stata trovata: 
+                </div>
+
+                <div id="notfound" class="bg-danger p-3 d-none">
+                    &cross; La tua mail non è stata trovata: 
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-50 h-100"></div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
