@@ -1,3 +1,5 @@
+// mail side
+
 const mailMessage = document.createElement('div');
 mailMessage.className = ('p-3') ;
 
