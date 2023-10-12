@@ -1,4 +1,4 @@
-const mailBtn = document.querySelector("#mail-side .btn");
+const mailBtn = document.querySelector("#mail-side button");
 const listMail = [
     'banana1@gmail.com',
     'fragola2@hotmail.com',
@@ -12,8 +12,14 @@ const listMail = [
     'mango10@hotmail.com',
 ]
 
-mailBtn.addEventListener('click' , function(){
+mailBtn.addEventListener("click" , function(){
     const userMail = document.getElementById('mail').value;
     // console.log(userMail);
-    
+
+    let trovata = false;
+    for(let i = 0 ; i < listMail.length ; i++){
+        const currentMail = listMail[i]
+        console.log(currentMail);
+    }
+    // console.log(trovata);
 })
