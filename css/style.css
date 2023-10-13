@@ -41,6 +41,7 @@
     align-items: center;
     margin: 0 auto;
     border: 2px solid black;
+    animation: rotate 0.5s linear;
 }
 
 .computer-dice{
@@ -54,4 +55,21 @@
     align-items: center;
     margin: 0 auto;
     border: 2px solid black;
+    animation: rotate 0.5s linear;
+}
+
+
+
+@keyframes rotate{
+    100% {transform: rotate(3960deg);}
+}
+
+.dice-message{
+    animation: appear 0.5s linear 0.7s forwards;
+    opacity: 0;
+}
+
+@keyframes appear{
+    /* 0% {opacity: 0;} */
+    100% {opacity: 1;}
 }

@@ -51,7 +51,7 @@ const diceMessage = document.createElement('div') ;
 const diceBtn = document.querySelector("#dice-side button");
 
 diceBtn.addEventListener('click' , function(){
-    diceMessage.className = 'p-4 fw-bold mt-5';
+    diceMessage.className = 'dice-message p-4 fw-bold mt-5 shadow-lg';
 
     player.className = ('player-dice') ;
     computer.className = ('computer-dice') ;
